@@ -76,7 +76,11 @@ const HacknightCounter = () => {
 
   return (
     <div className="md:py-10 py-5 pb-10">
-      <div className="w-full max-w-5xl mx-auto flex items-center">
+      <h2 className="text-center text-2xl md:text-3xl font-bold text-white mb-5">
+        {/* {hasStarted ? "Hackathon Live!" : "Hackathon starts in"} */}
+        Hackathon has Ended
+      </h2>
+      {/* <div className="w-full max-w-5xl mx-auto flex items-center">
         {hasStarted?(
         <>
         <CountdownItem num={elapsedTime.days} text="days" />
@@ -94,7 +98,7 @@ const HacknightCounter = () => {
         </>
         )
     }
-      </div>
+      </div> */}
     </div>
   );
 };

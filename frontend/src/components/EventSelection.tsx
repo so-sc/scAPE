@@ -319,6 +319,7 @@ export default function EventSelection() {
       window.location.replace(`${process.env.NEXT_PUBLIC_FRONTHOST}/profile`)
     }
   };
+  const closedEv=[""]
   if(testLoad) return (<></>)
   return (
     <>
@@ -349,7 +350,7 @@ export default function EventSelection() {
           {EVENTS.map((event: Event) => (
             <div
               key={event.event_id}
-              className={`bg-[#222222] rounded-lg shadow-md hover:shadow-lg transition-shadow overflow-hidden ${regEvents.includes(event.event_id) ? "opacity-50 pointer-events-none" : ""} ${parseInt(event.event_id)>=108? "opacity-50 pointer-events-none" : ""}`}
+              className={`bg-[#222222] rounded-lg shadow-md hover:shadow-lg transition-shadow overflow-hidden ${regEvents.includes(event.event_id) ? "opacity-50 pointer-events-none" : ""} ${parseInt(event.event_id)>=108||!(closedEv.includes(event.event_id))? "opacity-50 pointer-events-none" : ""}`}
             >
               <div
                 className="flex items-center justify-between p-4 cursor-pointer"

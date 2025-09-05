@@ -103,9 +103,9 @@ export default function Hero() {
       >
         <InfiniteMovingCards
           items={[
-            { title: "Registrations Now Open" },
+            { title: "Registrations Closed" },
             { title: "|" },
-            { title: "Join Us Today" },
+            { title: "Stay tuned for our upcoming events" },
             { title: "|" },
           ]}
         />
@@ -118,7 +118,7 @@ export default function Hero() {
           >
             {/* Main Buttons Section */}
             <div className="flex flex-col md:flex-row items-center gap-4 pb-20 md:pb-10 w-full justify-center">
-              {/* Event Registration Button */}
+              {/* Event Registration Button
               <Link href="/register" className="flex justify-center w-full md:w-auto">
                 <HoverBorderGradient
                   containerClassName="rounded-full"
@@ -131,13 +131,13 @@ export default function Hero() {
                     height={25}
                   />
                   <span className="text-neon-green text-center md:text-base text-sm">
-                    Event Registration
+                    Event Registration Closed
                   </span>
                   <span className="group-hover:text-neon-green">
                     <ArrowRightIcon />
                   </span>
                 </HoverBorderGradient>
-              </Link>
+              </Link> */}
 
               {/* Hackathon Registration Button
               <a
